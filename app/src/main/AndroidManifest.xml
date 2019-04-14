@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Profile_activity"></activity>
+        <activity android:name=".Otp_handler"></activity>
+        <activity android:name=".Profile_activity" />
         <activity android:name=".Service_history" />
         <activity android:name=".New_Service" />
         <activity android:name=".astha_manager">
