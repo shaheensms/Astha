@@ -45,6 +45,43 @@
     },
     {
       "client_info": {
+        "mobilesdk_app_id": "1:143547199369:android:0cf09a264425ba65",
+        "android_client_info": {
+          "package_name": "com.metacodersbd.asthaadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "143547199369-8r9fdjhgn0gpriedkcfs9vfvol3dl61u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.metacodersbd.asthaadmin",
+            "certificate_hash": "e7134e9e771c4552820851631487affe4d0ba29b"
+          }
+        },
+        {
+          "client_id": "143547199369-roo03l06g2i1jv14106v7ks7m2b7a66t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7o4ElVnjg6nez4anPNdfvTHcpA7fs_rY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "143547199369-roo03l06g2i1jv14106v7ks7m2b7a66t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:143547199369:android:40359b165245e5fb",
         "android_client_info": {
           "package_name": "com.metacodersbd.qrcodes"
