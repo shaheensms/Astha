@@ -135,7 +135,7 @@ public class Otp_handler extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
 
-                            Intent intent = new Intent(getApplicationContext(), astha_manager.class);
+                            Intent intent = new Intent(getApplicationContext(), ShopOwnerRegistration.class);
                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                            // intent.putExtra("GOOGLE" , "Phone");
                             startActivity(intent);

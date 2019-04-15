@@ -47,6 +47,14 @@ public class LoginPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.loginpageactivity);
 
+        try{
+
+            getSupportActionBar().hide();
+
+        }
+        catch (NullPointerException e ){
+            // getSupportActionBar() ;
+        }
         mauth = FirebaseAuth.getInstance();
 
 
@@ -130,7 +138,7 @@ public class LoginPage extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
 
-                            Intent i = new Intent(getApplicationContext(), astha_manager.class);
+                            Intent i = new Intent(getApplicationContext(), ShopOwnerRegistration.class);
                             //i.putExtra("GOOGLE" , "GOOGLE");
                             startActivity(i);
                             finish();

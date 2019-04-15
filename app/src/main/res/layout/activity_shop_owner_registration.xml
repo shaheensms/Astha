@@ -1,9 +1,266 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginRegSetupModule.ShopOwnerRegistration">
+    android:orientation="vertical"
+    android:background="#a5fffddc"
+    >
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ProgressBar
+            android:id="@+id/preogressbar_setupPage"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:indeterminate="true"
+            android:visibility="gone"
+            android:indeterminateTint="@android:color/white"
+            tools:visibility="visible" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Form"
+                android:textSize="40dp"
+                android:textColor="#009dff"
+                android:ems="8"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Shop Information"
+                android:textColorHint="#00d9ff"
+                android:textSize="20dp"
+                android:ems="8"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/input_shopName_setup"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Shop name"
+                android:textColorHint="#000"
+                android:textSize="18dp"
+                android:ems="8"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/input_address_setup"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:textColorHint="#000"
+                android:textSize="18dp"
+                android:ems="8"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/input_phone_setup"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Phone"
+                android:textColorHint="#000"
+                android:textSize="18dp"
+                android:inputType="number"
+                android:ems="8"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/email_id"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textColorHint="#000"
+                android:textSize="18dp"
+                android:inputType="textEmailAddress"
+                android:ems="8"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/membership_id"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Membershio Id"
+                android:textColorHint="#000"
+                android:textSize="18dp"
+                android:ems="8"
+                android:inputType="number"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/facebook_id"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Facebook Id"
+                android:textColorHint="#000"
+                android:textSize="18dp"
+                android:ems="8"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Owner Information"
+                android:textColorHint="#00d9ff"
+                android:textSize="20dp"
+                android:ems="8"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <EditText
+                    android:id="@+id/owner_name_id"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Owner Name"
+                    android:textColorHint="#000"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:ems="8"
+
+                    />
+                <EditText
+                    android:id="@+id/Owner_ph_id"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint=" Owner Phone"
+                    android:textColorHint="#000"
+                    android:textSize="18dp"
+                    android:inputType="number"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:ems="8"
+
+                    />
+                <EditText
+                    android:id="@+id/ownerEmail_id"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:textColorHint="#000"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18dp"
+                    android:inputType="textEmailAddress"
+                    android:ems="8"
+                    />
+                <EditText
+                    android:id="@+id/national_id"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="NID"
+                    android:layout_marginLeft="10dp"
+                    android:textColorHint="#000"
+                    android:textSize="18sp"
+                    android:ems="8"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <Button
+                android:id="@+id/finish_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/log_btn"
+                android:layout_gravity="center"
+                android:text="finish"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:clickable="true"
+                android:layout_marginTop="25dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:focusable="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
