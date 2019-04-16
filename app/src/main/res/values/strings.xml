@@ -1,4 +1,48 @@
 <resources>
     <string name="app_name">Astha</string>
     <string name="uploaginTitle">Uploading..</string>
+    <string name="scanMebtn">Scan</string>
+    <string name="login_mail">Mail Address</string>
+    <string name="Login_pass">Password</string>
+    <string name="reg_mail">Mail Address</string>
+    <string name="Reg_pass">Password</string>
+    <string name="shop_id">Shop id</string>
+    <string name="NexT_btn">Next</string>
+    <string name="Shop_Name">Shop Name</string>
+    <string name="Shop_loc">Shop Address</string>
+    <string name="welcome">Welcome </string>
+    <string name="Upload">Upload Data</string>
+    <string name="phone">Mobile Number</string>
+    <string name="finish">Finish</string>
+    <string name="log_in">Log In</string>
+    <string name="Sign_up">Sign Up</string>
+    <string name="proceed">Next Step</string>
+    <string name="Plzz_Enter_something">Error: Please Enter Mail or Password Properly</string>
+    <string name="invoicPic">Upload Invoice Picture</string>
+    <string name="pro_name">Product Name </string>
+    <string name="Model_nam">Model Name </string>
+    <string name="ByerName">Buyer Name</string>
+    <string name="Shop_phone_num">Shop phone Number</string>
+    <string name="price">Price </string>
+    <string name="Warranty">Warranty</string>
+    <string name="done_upload">Data Has Been Uploaded</string>
+    <string name="ScanAgain">Scan Again</string>
+    <string name="comment">Comment</string>
+    <string name="CloseApp">Exit</string>
+    <string name="scanAgain">Scan Again</string>
+    <string name="QrEror">QR ERROR!!</string>
+    <string name="QrEmsg">This Is A Used Code</string>
+    <string name="scanNew">New Scan</string>
+    <string name="cancel">Cancel</string>
+    <string name="Dowload">Download Image</string>
+    <string name="callDesk">Help Line</string>
+    <string name="tEXTsIZE" translatable="false">18sp</string>
+    <string name="notValid">This Qr Code Does Not Exist</string>
+    <string name="customScanner">Custom Input</string>
+    <string name="Enter">Enter</string>
+    <string name="uploadSuccssful">Uploaded SuccessFully !!</string>
+    <string name="uploadAgina">Do You Want To Upload Again ?</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+
 </resources>

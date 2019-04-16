@@ -112,7 +112,7 @@ public class ShopOwnerRegistration extends AppCompatActivity {
                     showProgressDialog();
 
                     modelForShopOwner  model = new modelForShopOwner(ShopName , ShopAdress , ShopPhone , ShopEmail ,  MemberId , FbId
-                            , OwnerId ,OwnerPhone ,OwnerEmail,OwnerNID, uid);
+                            , OwnerId ,OwnerPhone ,OwnerEmail,OwnerNID, uid ,"NO");
 
                     mref.child(uid).setValue(model).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override

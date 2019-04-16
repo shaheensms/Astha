@@ -4,13 +4,13 @@ public class modelForShopOwner {
 
 
     String shopName , shopAdress , shopPhone , shopEmail ,  memberId , fbId
-            , ownerId ,ownerPhone ,ownerEmail,ownerNID , uid  ;
+            , ownerId ,ownerPhone ,ownerEmail,ownerNID , uid  , isverified;
 
 
     public modelForShopOwner() {
     }
 
-    public modelForShopOwner(String shopName, String shopAdress, String shopPhone, String shopEmail, String memberId, String fbId, String ownerId, String ownerPhone, String ownerEmail, String ownerNID, String uid) {
+    public modelForShopOwner(String shopName, String shopAdress, String shopPhone, String shopEmail, String memberId, String fbId, String ownerId, String ownerPhone, String ownerEmail, String ownerNID, String uid, String isverified) {
         this.shopName = shopName;
         this.shopAdress = shopAdress;
         this.shopPhone = shopPhone;
@@ -22,6 +22,7 @@ public class modelForShopOwner {
         this.ownerEmail = ownerEmail;
         this.ownerNID = ownerNID;
         this.uid = uid;
+        this.isverified = isverified;
     }
 
     public String getShopName() {
@@ -110,5 +111,13 @@ public class modelForShopOwner {
 
     public void setUid(String uid) {
         this.uid = uid;
+    }
+
+    public String getIsverified() {
+        return isverified;
+    }
+
+    public void setIsverified(String isverified) {
+        this.isverified = isverified;
     }
 }

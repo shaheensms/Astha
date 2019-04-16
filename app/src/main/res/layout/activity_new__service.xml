@@ -1,18 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".New_Service">
+    android:background="#64b5f6"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="@string/invoicPic"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Service Activity"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="384dp" />
-</android.support.constraint.ConstraintLayout>
+        <ImageView
+            android:id="@+id/imageView_add_invoice"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:srcCompat="@drawable/addimageplaceholeder" />
+
+
+        <EditText
+            android:id="@+id/input_productName_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+
+            android:layout_marginEnd="8dp"
+            android:hint="@string/pro_name"
+            android:inputType="textImeMultiLine"
+
+            android:maxLines="2"
+            android:singleLine="true"
+            android:textColor="#ffff"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_add_invoice" />
+
+
+        <EditText
+            android:id="@+id/input_model_Num_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:hint="@string/Model_nam"
+            android:inputType="text"
+
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#ffff"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_productName_upload" />
+
+
+        <EditText
+            android:id="@+id/input_phone_shopupload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:hint="@string/Shop_phone_num"
+
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textColor="#ffff"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_buyer_price" />
+
+
+        <EditText
+            android:id="@+id/input_buyer_name_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:hint="@string/ByerName"
+            android:inputType="textPersonName"
+
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#ffff"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_phone_shopupload" />
+
+
+        <EditText
+            android:id="@+id/input_buyer_Warranty_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:hint="@string/Warranty"
+            android:inputType="numberDecimal"
+
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#ffff"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_buyer_name_upload" />
+
+
+        <EditText
+            android:id="@+id/input_buyer_price"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:hint="price"
+
+            android:inputType="textMultiLine"
+            android:singleLine="true"
+            android:textColor="#ffff"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_model_Num_upload" />
+
+
+        <EditText
+            android:id="@+id/input_buyer_Warranty_Commnet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:hint="@string/comment"
+
+            android:inputType="textMultiLine"
+            android:singleLine="true"
+            android:textColor="#ffff"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_buyer_Warranty_upload" />
+
+
+        <Button
+            android:id="@+id/Data_uploadBtn"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/log_btn"
+            android:text="@string/Upload"
+            android:textColor="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_buyer_Warranty_Commnet" />
+
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
+
