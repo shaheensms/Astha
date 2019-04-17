@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Astha</string>
+    <string name="app_name">Astha Manager</string>
     <string name="uploaginTitle">Uploading..</string>
     <string name="scanMebtn">Scan</string>
     <string name="login_mail">Mail Address</string>

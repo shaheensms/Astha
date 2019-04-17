@@ -28,7 +28,7 @@ public class ShopOwnerRegistration extends AppCompatActivity {
             , OwnerIdEditText ,OwnerPhoneEditText ,OwnerEmailEditText ,OwnerNIDEditText  ;
 
     String ShopName , ShopAdress , ShopPhone , ShopEmail ,  MemberId , FbId
-            , OwnerId ,OwnerPhone ,OwnerEmail,OwnerNID  ;
+            , OwnerId ,OwnerPhone ,OwnerEmail,OwnerNID  , ownerName  ;
 
     Button RegiserBtn ;
 
