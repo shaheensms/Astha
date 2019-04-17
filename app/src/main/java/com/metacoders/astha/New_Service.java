@@ -54,8 +54,8 @@ public class New_Service extends AppCompatActivity {
 
     String QRCODE="Default" ;
     String shopUid="sadfasdf"  ,qrCode="Default" ;
-    String shopMail , shopNum , productName , productModel , productComment , productWarranty , productBuyerName , shopname , shopadress ,purchageDate ,productPrice ;
-    EditText pname , shopnumber , pwarran , pmodel , pbuyName , pcomment ,pprice ;
+    String shopMail = "No Email" , shopNum , userPhone , productName , productModel , productComment , productWarranty , productBuyerName , shopname , shopadress ,purchageDate ,productPrice ;
+    EditText pname , shopnumber , pwarran , pmodel , pbuyName , pcomment ,pprice, userphoneInput ;
     ImageView invoicePic ;
     Button fupload ;
     FirebaseAuth mauth ;
@@ -98,6 +98,8 @@ public class New_Service extends AppCompatActivity {
         pprice = (EditText)findViewById(R.id.input_buyer_price);
         fupload = findViewById(R.id.Data_uploadBtn);
         invoicePic = findViewById(R.id.imageView_add_invoice);
+        userphoneInput  = findViewById(R.id.input_buyer_phone);
+
 
         //setting up Database
 
@@ -151,7 +153,7 @@ public class New_Service extends AppCompatActivity {
                 productWarranty = pwarran.getText().toString();
                 productBuyerName = pbuyName.getText().toString();
                 productPrice = pprice.getText().toString();
-
+                userPhone = userphoneInput.getText().toString();
                 DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
                 Date date = new Date();
                 //    System.out.println(dateFormat.format(date));
@@ -201,7 +203,7 @@ public class New_Service extends AppCompatActivity {
 
 
                             produrctModel uploadModel = new  produrctModel(shopMail ,shopNum , productName , productModel,productComment,productWarranty,productBuyerName
-                                    ,shopname,shopadress,shopUid,QRCODE, downloaduri.toString() ,purchageDate,productPrice );
+                                    ,shopname,shopadress,shopUid,QRCODE, downloaduri.toString() ,purchageDate,productPrice, userPhone );
 
                             String ts =UserRef.push().getKey() ;
                             UserRef.child(ts).setValue(uploadModel).addOnSuccessListener(new OnSuccessListener<Void>() {

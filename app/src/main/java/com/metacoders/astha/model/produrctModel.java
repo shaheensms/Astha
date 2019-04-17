@@ -3,12 +3,12 @@ package com.metacoders.astha.model;
 public class produrctModel {
 
     String shopmail, shopnum, productname, productmodel, comment, warranty,
-            productbuyername, shop_name, shop_adress, shopuid, qrcode, imageurl ,purchageDate ,productprice;
+            productbuyername, shop_name, shop_adress, shopuid, qrcode, imageurl ,purchageDate ,productprice, userphone;
 
     public produrctModel() {
     }
 
-    public produrctModel(String shopmail, String shopnum, String productname, String productmodel, String comment, String warranty, String productbuyername, String shop_name, String shop_adress, String shopuid, String qrcode, String imageurl, String purchageDate, String productprice) {
+       public produrctModel(String shopmail, String shopnum, String productname, String productmodel, String comment, String warranty, String productbuyername, String shop_name, String shop_adress, String shopuid, String qrcode, String imageurl, String purchageDate, String productprice, String userphone) {
         this.shopmail = shopmail;
         this.shopnum = shopnum;
         this.productname = productname;
@@ -23,6 +23,7 @@ public class produrctModel {
         this.imageurl = imageurl;
         this.purchageDate = purchageDate;
         this.productprice = productprice;
+        this.userphone = userphone;
     }
 
     public String getShopmail() {
@@ -135,5 +136,13 @@ public class produrctModel {
 
     public void setProductprice(String productprice) {
         this.productprice = productprice;
+    }
+
+    public String getUserphone() {
+        return userphone;
+    }
+
+    public void setUserphone(String userphone) {
+        this.userphone = userphone;
     }
 }

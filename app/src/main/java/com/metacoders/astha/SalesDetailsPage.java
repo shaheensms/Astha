@@ -31,7 +31,7 @@ public class SalesDetailsPage extends AppCompatActivity {
     String  pname , Pmodel , Pprice, PWarranty, Pcomment, PImageLink, BuyerName, qrCode, purchageDate, PShopName, PshopNumber, shopmail ;
 
     TextView shopmail_in, shopnum_in, productname_in, productmodel_in, comment_in, warranty_in,
-            productbuyername_in, shop_name_in, shop_adress_in, shopuid_in, qrcode_in ,purchageDate_in ,productprice_in;
+            productbuyername_in, shop_name_in, shop_adress_in, shopuid_in, qrcode_in ,purchageDate_in ,productprice_in, userPhone ;
     FirebaseAuth mauth ;
     String uid ;
     ImageView iamge ;
@@ -74,6 +74,7 @@ public class SalesDetailsPage extends AppCompatActivity {
         qrcode_in = (TextView) findViewById(R.id.productID_SalesDEtails);
         productbuyername_in = (TextView) findViewById(R.id.productBuyerName_SalesDEtails);
         dwnloadbtn = (Button) findViewById(R.id.dwldBtn_SalesDEtails);
+        userPhone = findViewById(R.id.productBuyerCell_SalesDEtails);
 
 
 
@@ -93,11 +94,13 @@ public class SalesDetailsPage extends AppCompatActivity {
         PshopNumber=i.getStringExtra("SHOPNUMBER");
         shopmail = i.getStringExtra("SHOPMAIL");
         String pshopAdress = i.getStringExtra("ADRESS");
+        String buyerPhone = i.getStringExtra("BUYERPH");
 
 
 
 
-        shopuid_in.setText("UID :"+uid);
+
+        shopuid_in.setText("Shop uID :"+uid);
         shopmail_in.setText("Email : "+shopmail);
         shopnum_in.setText("Shop Number:"+PshopNumber);
         productname_in.setText("Product Name:"+pname);
@@ -110,6 +113,8 @@ public class SalesDetailsPage extends AppCompatActivity {
         qrcode_in.setText("Qr Code :"+qrCode);
         purchageDate_in.setText("Purchage Date:"+purchageDate);
         productprice_in.setText("Product Price:"+Pprice);
+        userPhone.setText("Buyer Phone :"+ buyerPhone);
+
 
 //        Glide.with(SalesDetailsPage.this)
           //      .load(PImageLink)
@@ -119,6 +124,7 @@ public class SalesDetailsPage extends AppCompatActivity {
 
         Picasso.get()
                 .load(PImageLink)
+                .resize(350 , 350)
                 .centerCrop()
                 .into(iamge);
 

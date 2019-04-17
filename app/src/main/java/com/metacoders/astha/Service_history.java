@@ -108,7 +108,7 @@ public class Service_history extends AppCompatActivity {
 
                 holder.setDetails(getApplicationContext(), model.getShopmail(), model.getShopnum(), model.getProductname() , model.getProductmodel(), model.getComment()
                         , model.getWarranty() , model.getProductbuyername() , model.getShop_name() , model.getShop_adress() , model.getShopuid() , model.getQrcode()
-                        ,model.getImageurl() , model.getPurchageDate() , model.getProductprice());
+                        ,model.getImageurl() , model.getPurchageDate() , model.getProductprice() , model.getUserphone());
 
                 Handler handler = new Handler();
                 handler.postDelayed(new Runnable() {
@@ -161,6 +161,7 @@ public class Service_history extends AppCompatActivity {
                         String PshopNumber = getItem(position).getShopnum() ;
                         String PshoAdres = getItem(position).getShop_adress() ;
                         String shopmail = getItem(position).getShopmail();
+                        String buyph = getItem(position).getUserphone();
 
                         Intent i = new Intent(view.getContext() , SalesDetailsPage.class);
                         i.putExtra("NAME", Pname);
@@ -176,6 +177,8 @@ public class Service_history extends AppCompatActivity {
                         i.putExtra("SHOPNUMBER", PshopNumber);
                         i.putExtra("ADRESS", PshoAdres);
                         i.putExtra("SHOPMAIL", shopmail);
+                        i.putExtra("BUYERPH", buyph);
+
 
 
                         startActivity(i);

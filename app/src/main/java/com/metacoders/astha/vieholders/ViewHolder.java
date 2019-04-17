@@ -36,7 +36,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
     }
 
     //set details to recycler view row
-    public void setDetails(Context ctx, String ShopMail, String Rshopnum, String Rproductname, String Rproductmodel, String Rcomment, String Rwarranty, String Rproductbuyername, String Rshop_name, String Rshop_adress, String Rshopuid, String Rqrcode, String Rimageurl, String RpurchageDate, String Rproductprice){
+    public void setDetails(Context ctx, String ShopMail, String Rshopnum, String Rproductname, String Rproductmodel, String Rcomment, String Rwarranty, String Rproductbuyername, String Rshop_name, String Rshop_adress, String Rshopuid, String Rqrcode, String Rimageurl, String RpurchageDate, String Rproductprice , String usePhone){
         //Views
         TextView pname = mView.findViewById(R.id.rProductName);
         TextView price = mView.findViewById(R.id.r_price_Tv);
@@ -51,6 +51,8 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         TextView commentTV = mView.findViewById(R.id.r_comment_TV);
         TextView AdressTV = mView.findViewById(R.id.r_Adress_TV);
         TextView shopMailTv = mView.findViewById(R.id.r_ShopMail_TV);
+        TextView userPhoneTv = mView.findViewById(R.id.r_userPHONE_TV);
+
 
 
 
@@ -73,6 +75,8 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         price.setText("Price :"+Rproductprice);
         AdressTV.setText(Rshop_adress);
         shopMailTv.setText(ShopMail);
+        userPhoneTv.setText(usePhone);
+
 
       //  Picasso.get().load(image).error(R.drawable.loading).into(mImageIv);
 
