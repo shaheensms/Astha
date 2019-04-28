@@ -138,7 +138,7 @@ public class LoginPage extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
 
-                            Intent i = new Intent(getApplicationContext(), astha_manager.class);
+                            Intent i = new Intent(getApplicationContext(), ShopOwnerRegistration.class);
                             //i.putExtra("GOOGLE" , "GOOGLE");
                             startActivity(i);
                             finish();

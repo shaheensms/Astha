@@ -72,7 +72,7 @@ public class Otp_handler extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
 
                 if(firebaseAuth.getCurrentUser() !=null){
-                    Intent i = new Intent(getApplicationContext() , astha_manager.class);
+                    Intent i = new Intent(getApplicationContext() , ShopOwnerRegistration.class);
                     startActivity(i);
                 }
 
@@ -142,7 +142,7 @@ public class Otp_handler extends AppCompatActivity {
                             finish();
 
                         } else {
-                            Toast.makeText(getApplicationContext(),"Eror: "+ task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(),"Error: "+ task.getException().getMessage(), Toast.LENGTH_LONG).show();
                         }
                     }
 
@@ -178,7 +178,7 @@ public class Otp_handler extends AppCompatActivity {
             }
             else {
 
-                Toast.makeText(getApplicationContext(),"Eror: wrong Code  ", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"Error: wrong Code  ", Toast.LENGTH_LONG).show();
 
             }
         }
